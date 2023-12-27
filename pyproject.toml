@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "faq.startup"
+version = "0.1.0"
+description = ""
+authors = ["Evgeny Chernyshov <evgeny.chernyshov@hkeeper.global>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+farm-haystack = {extras = ["ocr"], version = "^1.13.2"}
+openai = "0.27.4"
+python-dotenv = "^0.21.1"
+trafilatura = "^1.4.1"
+fastapi = "^0.92.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+pydantic = "^1.10.5"
+python-multipart = "^0.0.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
